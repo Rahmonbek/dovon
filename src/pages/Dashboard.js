@@ -9,6 +9,7 @@ import YouTube from 'react-youtube';
 import {Tooltip} from 'antd'
 import 'antd/dist/antd.css';
 import Footer from './Footer'
+
 export default class Dashboard extends Component {
     render() {
         return (
@@ -25,9 +26,9 @@ export default class Dashboard extends Component {
     <Navbar.Collapse id="basic-navbar-nav" className={style.navT_nav}>
       <Nav className="me-auto">
         <Nav.Link className={style.lik} href="#home">Bosh sahifa</Nav.Link>
-        <Nav.Link className={style.lik} href="#link">Link</Nav.Link>
-        <Nav.Link className={style.lik} href="#link">Link</Nav.Link>
-        <Nav.Link className={style.lik} href="#link">Link</Nav.Link>
+        <Nav.Link className={style.lik} href="#link">Mahsulotlarimiz</Nav.Link>
+        <Nav.Link className={style.lik} href="#link">Biz haqimizda</Nav.Link>
+        <Nav.Link className={style.lik} href="#link">Skidka</Nav.Link>
         <Nav.Link className={style.lik} href="#link">Bog'lanish</Nav.Link>
         
       </Nav>
@@ -127,11 +128,11 @@ export default class Dashboard extends Component {
 </div>
 <div className={style.blue1}></div>
 <div className={style.blue2}></div>
-<div className={style.icon}>
+<div className={style.icon} id="iconH">
     <Container>
         <h1>Biz bilan bog'laning</h1>
         <Row>
-           <Col lg={6} md={6} sm={12}  className={style.cl}>
+           <Col lg={6} md={4} sm={12}  className={style.cl}>
 <div className={style.icon_item}>
     <Row>
     <Col lg={6} style={{display:'flex', alignItems:'center', justifyContent:'center', marginBottom:'10px'}}>
@@ -187,7 +188,11 @@ export default class Dashboard extends Component {
 
 </div>
            </Col>
+        <Col lg={6} md={8} sm={12}>
+     
+        </Col>
         </Row>
+
     </Container>
 </div>
 <Footer/>
