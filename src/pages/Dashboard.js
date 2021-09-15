@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import '../App.css';
 import style from '../css/Dashboard.module.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Navbar, Container, Nav, Row, Col} from 'react-bootstrap'
@@ -8,7 +9,7 @@ import videoT from '../video/video.mp4'
 import YouTube from 'react-youtube';
 import {Tooltip} from 'antd'
 import 'antd/dist/antd.css';
-import Footer from './Footer'
+import FooterA from './FooterA'
 
 export default class Dashboard extends Component {
     render() {
@@ -211,7 +212,7 @@ export default class Dashboard extends Component {
 
     </Container>
 </div>
-<Footer/>
+<FooterA />
             </div>
          
         )

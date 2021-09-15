@@ -1,3 +1,6 @@
+body{
+    overflow-x: hidden;
+}
 .logo{
     display:flex;
      align-items:center;
@@ -306,4 +309,10 @@
  .blue2{
 right: -230px;
  }   
+}
+@media (min-width:1440px) {
+    .video{
+        scale: 1.2;
+    }
+    
 }

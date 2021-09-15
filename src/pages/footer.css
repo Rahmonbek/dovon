@@ -2,6 +2,13 @@
 .footer .footer-widget p {
     margin-bottom: 27px;
 }
+.footer .dk-footer-box-info {
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; 
+border-radius:80px;
+width: 30%;
+  background: #1105fa;
+  padding: 40px;
+  z-index: 2; }
 .footer .footer p {
     font-family: 'Nunito', sans-serif;
     font-size: 16px;
@@ -19,6 +26,7 @@
 .footer .animate-border:after {
   position: absolute;
   content: "";
+
   width: 35px;
   height: 3px;
   left: 0;
@@ -28,13 +36,7 @@
   -webkit-animation: animborder 2s linear infinite;
   animation: animborder 2s linear infinite; }
 
-@-webkit-keyframes animborder {
-  0% {
-    -webkit-transform: translateX(0px);
-    transform: translateX(0px); }
-  100% {
-    -webkit-transform: translateX(113px);
-    transform: translateX(113px); } }
+
 
 @keyframes animborder {
   0% {
@@ -79,15 +81,20 @@
   100% {
     width: 80%; } } 
 
-.footer .dk-footer {
-  padding: 75px 0 0;
+.footer .dk-footer{
+  padding: 20px;
   background-color: #1105e6;
   position: relative;
-  z-index: 2; }
+  z-index: 2; 
+}
+
+
   .footer .dk-footer .contact-us {
-    margin-top: 0;
-    margin-bottom: 30px;
-    padding-left: 80px; }
+    margin: 0;
+    background-color: brown;
+padding: 0;
+
+   }
     .footer .dk-footer .contact-us .contact-info {
       margin-left: 50px; }
     .footer .dk-footer .contact-us.contact-us-last {
@@ -98,14 +105,14 @@
     position: relative;
     color:#007bff; }
 
-.footer .dk-footer-box-info {
-  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; 
-border-radius:80px;
-  position: absolute;
-  top: -20px;
-  background: #1105fa;
-  padding: 40px;
-  z-index: 2; }
+
+
+
+
+
+
+    
+
   .footer .dk-footer-box-info .footer-social-link h3 {
     color: #fff;
     font-size: 24px;
@@ -138,7 +145,6 @@ border-radius:80px;
       background-color: #B7242A; }
 
 .footer .footer-awarad {
-  margin-top: 285px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -180,11 +186,9 @@ border-radius:80px;
   max-width: fit-content; }
 
 .footer .footer-widget ul {
-  width: 50%;
-  float: left;
+
   list-style: none;
-  margin: 0;
-  padding: 0; }
+  }
 
 .footer .footer-widget li {
   margin-bottom: 18px; }
@@ -231,11 +235,6 @@ border-radius:80px;
   .footer .dk-footer-form button:hover {
     cursor: pointer; }
 
-/* ==========================
-
-    Contact
-
-=============================*/
 .footer .contact-us {
   position: relative;
   z-index: 2;
@@ -251,8 +250,7 @@ border-radius:80px;
   -ms-flex-align: center;
   align-items: center; }
 
-.footer .contact-icon {
-  position: absolute; }
+
   .footer .contact-icon i {
     font-size: 36px;
     top: -5px;

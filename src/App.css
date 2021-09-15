@@ -132,7 +132,7 @@ footer p {
     border-radius: 5px;
     transition: all 0.3s ease-in-out 0s;
 }
-wpcf7-form .contact-form-footer .wpcf7-submit {
+.wpcf7-form .contact-form-footer .wpcf7-submit {
   background-color: #394050;
   color: #99a9b5;
   border: none;
@@ -182,4 +182,10 @@ wpcf7-form .contact-form-footer .wpcf7-submit {
 }
 .send{
 margin:20px;
+}
+@media (min-width:1440px)  {
+  .cards_icon{
+    scale: 1.5;
+  }
+  
 }

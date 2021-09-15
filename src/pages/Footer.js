@@ -1,21 +1,24 @@
 import React, { Component } from 'react'
 import './footer.css'
 import gerb from '../img/logo.png'
+import { Col, Container, Row } from 'react-bootstrap'
 export default class Footer extends Component {
     render() {
         return (
+            <div>
 
-
-            <div className="footer">
-
-
-                <footer id="dk-footer" className="dk-footer" >
-        <div style={{padding:'20px'}}>
-            <div className="row">
-                <div className="col-md-12 col-lg-2">
-                    <div className="dk-footer-box-info" >
+<div className="footer">
+         
+                <footer id="dk-footer" className="dk-footer">
+                    
+        <Container>
+            <Row>
+                
+                
+                <Col>
+                    <div className="dk-footer-box-info">
                         <a href="index.html" className="footer-logo">
-                            <img style={{width:"300px", marginLeft:'25%', height:'auto'}} src={gerb} alt="footer_logo" className="img-fluid"/>
+                            <img style={{width:"50%", marginLeft:'25%', height:'auto'}} src={gerb} alt="footer_logo" className="img-fluid"/>
                         </a>
                        
                         <div className="footer-social-link">
@@ -51,16 +54,121 @@ export default class Footer extends Component {
                         </div>
                        
                     </div>
+                
+          
+                </Col>      
+               
 
 
-                    
+               <Col>
+                    <div className="row">
+                        <Col md={6}>
+                            <div className="contact-us">
+                                <div className="contact-icon">
+                                    <i className="fa fa-map-o" aria-hidden="true"></i>
+                                </div>
+                                <div className="contact-info">
+                                    <h3>Jizzax viloyati Jizzax shahri</h3>
+                                    <p>Ortiqho'jayev ko'chasi 5 - uy</p>
+                                </div>
+                            </div>
+                        </Col>
+
+
+                        <Col md={6}>
+                            <div className="contact-us contact-us-last">
+                                <div className="contact-icon">
+                                    <i className="fa fa-volume-control-phone" aria-hidden="true"></i>
+                                </div>
+                               
+                                <div className="contact-info">
+                                    <h3>+998 95 711 95 53</h3>
+                                    <p>Bizga qo'ng'iroq qiling</p>
+                                </div>
+                               
+                            </div>
+                           </Col>
+                           
+                        </div>
+                       
+                    </Col>
+
+
+
+</Row></Container></footer></div>
+
+    <div className="footer-awarad">
+                        <img src="images/icon/best.png" alt=""/>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div className="footer">
+          <hr/> 
+          <br/> 
+          <hr/> 
+                <footer id="dk-footer" className="dk-footer">
+        <div className="container">
+            <div className="row">
+                <div className="col-md-12 col-lg-4">
+                    <div className="dk-footer-box-info" style={{width:'30%', marginTop:'60px'}}>
+                        <a href="index.html" className="footer-logo">
+                            <img style={{width:"50%", marginLeft:'25%', height:'auto'}} src={gerb} alt="footer_logo" className="img-fluid"/>
+                        </a>
+                       
+                        <div className="footer-social-link">
+                        <br/>
+                            <h3>Ijtimoiy tarmoqlarimizga obuna bo'ling:</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i className="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i className="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i className="fa fa-google-plus"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i className="fa fa-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i className="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                       
+                    </div>
                    
                     <div className="footer-awarad">
                         <img src="images/icon/best.png" alt=""/>
                        
                     </div>
                 </div>
-               
+               <hr/>
+
                 <div className="col-md-12 col-lg-8">
                     <div className="row">
                         <div className="col-md-6">
@@ -168,7 +276,7 @@ export default class Footer extends Component {
        
        
 </footer>
-
+</div>
             </div>
         )
     }
