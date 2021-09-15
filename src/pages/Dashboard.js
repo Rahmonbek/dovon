@@ -22,9 +22,9 @@ export default class Dashboard extends Component {
        <img src={logo}/>
        <p>Dovon</p>
         </Navbar.Brand>
-    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-    <Navbar.Collapse id="basic-navbar-nav" className={style.navT_nav}>
-      <Nav className="me-auto">
+    <Navbar.Toggle aria-controls="basic-navbar-nav" style={{border:'none'}} />
+    <Navbar.Collapse id="basic-navbar-nav" >
+      <Nav className="me-auto" className={style.navT_nav}>
         <Nav.Link className={style.lik} href="#home">Bosh sahifa</Nav.Link>
         <Nav.Link className={style.lik} href="#link">Mahsulotlarimiz</Nav.Link>
         <Nav.Link className={style.lik} href="#link">Biz haqimizda</Nav.Link>
@@ -61,7 +61,7 @@ export default class Dashboard extends Component {
 <div className={style.cards}>
     <Container>
         <Row>
-        <Col lg={4} md={4} sm={12}>
+        <Col lg={4} md={12} sm={12}>
         <div className={style.cards_item}>
             <div className={style.cards_icon}>
                 <i className="fas fa-palette"></i>
@@ -71,24 +71,24 @@ export default class Dashboard extends Component {
         </div>
                 
                 </Col>
-                <Col lg={4} md={4} sm={12}>
-                <div className={style.cards_item}  id="fer">
+                <Col lg={4} md={12} sm={12}>
+                <div className={style.cards_item1}  id="fer">
             <div className={style.cards_icon}>
                 <i className="fas fa-laptop"></i>
             </div>
             <h1>Sifat</h1>
-            <p>Kompyuterlarimiz sifat darajasi bo'yicha dunyoning eng mashhur brandlari bilan bahslasha oladi. Har bir mahsulotimizga 3 yillik kafolat beramiz. Shu muddat ichida biror kamchilik sezilsa servis xizmatimizdan bemalol tekinga foydalanishingiz mumkin.</p>
+            <p style={{zIndex:'10',textShadow:'0px 0px 5px white'}}>Kompyuterlarimiz sifat darajasi bo'yicha dunyoning eng mashhur brandlari bilan bahslasha oladi. Har bir mahsulotimizga 3 yillik kafolat beramiz. Shu muddat ichida biror kamchilik sezilsa servis xizmatimizdan bemalol tekinga foydalanishingiz mumkin.</p>
         </div>
                 
                 </Col>
 
-            <Col lg={4} md={4} sm={12}>
+            <Col lg={4} md={12} sm={12}>
             <div className={style.cards_item}>
             <div className={style.cards_icon}>
                 <i className="fas fa-money-bill-alt"></i>
             </div>
             <h1>Narx</h1> 
-            <p>Mijozlarimizga qulaylik tug'dirish maqsadida mahsulotilarimiz narxlarini eng arzon miqdorda belgilaganmiz. Bizning mahsulotimizni xarid qilsangiz pulingiz o'zingiz bilan ketadi.</p>
+            <p style={{zIndex:'10',textShadow:'0px 0px 5px white'}}>Mijozlarimizga qulaylik tug'dirish maqsadida mahsulotilarimiz narxlarini eng arzon miqdorda belgilaganmiz. Bizning mahsulotimizni xarid qilsangiz pulingiz o'zingiz bilan ketadi.</p>
         </div>
                 
             </Col>
@@ -188,8 +188,24 @@ export default class Dashboard extends Component {
 
 </div>
            </Col>
-        <Col lg={6} md={8} sm={12}>
-     
+        <Col lg={6} md={8} sm={12} style={{margin:'auto',textAlign:'center'}}>
+        <div class="widget">
+                    <h5 class="footer-title">Biz bilan bog`lanish:</h5>
+                    <div class="textwidget">
+                      <div role="form" class="wpcf7" id="wpcf7-f4-o1" lang="en-US" dir="ltr">
+
+                        <form method="post" class="wpcf7-form" novalidate="novalidate">
+
+                          <div class="contact-form-footer">
+                            <p><span class="wpcf7-form-control-wrap your-first-name"><input type="text" name="your-first-name" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="F.I.O" /></span></p>
+                            <p><span class="wpcf7-form-control-wrap your-email_1"><input type="tel" name="your-email_1" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-email" aria-invalid="false" placeholder="Telefon  raqamni kiriting" /></span></p>
+                            <p><span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Sizning xabaringiz"></textarea></span></p>
+                            <div class="Send"><input type="button" value="Yuborish" class="wpcf7-form-control wpcf7-submit" /><span class="ajax-loader" ></span></div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
         </Col>
         </Row>
 

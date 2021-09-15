@@ -4,17 +4,18 @@ import gerb from '../img/logo.png'
 export default class Footer extends Component {
     render() {
         return (
+
+
             <div className="footer">
-          <br/> 
-          <br/> 
-          <br/> 
-                <footer id="dk-footer" className="dk-footer">
-        <div className="container">
+
+
+                <footer id="dk-footer" className="dk-footer" >
+        <div style={{padding:'20px'}}>
             <div className="row">
-                <div className="col-md-12 col-lg-4">
-                    <div className="dk-footer-box-info" style={{width:'30%', marginTop:'60px'}}>
+                <div className="col-md-12 col-lg-2">
+                    <div className="dk-footer-box-info" >
                         <a href="index.html" className="footer-logo">
-                            <img style={{width:"50%", marginLeft:'25%', height:'auto'}} src={gerb} alt="footer_logo" className="img-fluid"/>
+                            <img style={{width:"300px", marginLeft:'25%', height:'auto'}} src={gerb} alt="footer_logo" className="img-fluid"/>
                         </a>
                        
                         <div className="footer-social-link">
@@ -50,6 +51,9 @@ export default class Footer extends Component {
                         </div>
                        
                     </div>
+
+
+                    
                    
                     <div className="footer-awarad">
                         <img src="images/icon/best.png" alt=""/>
