@@ -14,7 +14,7 @@ import FooterA from './FooterA'
 export default class Dashboard extends Component {
     render() {
         return (
-            <div >
+            <div style={{overflowX:'hidden'}}>
             <div className={style.header}>
                 <div className={style.navT}>
                 <Navbar expand="lg">
@@ -36,9 +36,8 @@ export default class Dashboard extends Component {
     </Navbar.Collapse>
   </Container>
 </Navbar>
-                <div className={style.blue1}></div>
-<div className={style.blue2}></div></div>
-           <div className={style.di}></div>
+                </div>
+         
          <Container><Row>
              <Col lg={6} md={6} sm={12} className={style.head_textCol}>
                  <p>Sifat va qulay narxlar</p>
@@ -57,9 +56,9 @@ export default class Dashboard extends Component {
               </div> 
              </div>
              </Col>
-             </Row></Container>
+             </Row></Container><div className={style.di}></div>
             </div>
-          
+            
 <div className={style.cards}>
     <Container>
         <Row>
@@ -98,7 +97,8 @@ export default class Dashboard extends Component {
             </Row>
 
         
-    </Container>
+    </Container><div className={style.blue1}></div>
+<div className={style.blue2}></div>
 </div>
 <div className={style.video}>
     <Row>
