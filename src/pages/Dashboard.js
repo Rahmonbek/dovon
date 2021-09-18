@@ -29,7 +29,7 @@ export default class Dashboard extends Component {
         <Nav.Link className={style.lik} href="#home">Bosh sahifa</Nav.Link>
         <Nav.Link className={style.lik} href="#link">Mahsulotlarimiz</Nav.Link>
         <Nav.Link className={style.lik} href="#link">Biz haqimizda</Nav.Link>
-        <Nav.Link className={style.lik} href="#link">Skidka</Nav.Link>
+        <Nav.Link className={style.lik} href="#link">Skidkalar</Nav.Link>
         <Nav.Link className={style.lik} href="#link">Bog'lanish</Nav.Link>
         
       </Nav>

@@ -6,7 +6,7 @@ body{
      align-items:center;
      justify-content:center}
 .logo img{
-    width:30px;
+    width:50px;
 }
 .logo p{
     font-size:30px;
@@ -231,6 +231,12 @@ body{
       height: 605px;
     
    }
+   .blur1{
+    left: -230px;
+ }
+ .blue2{
+right: -230px;
+ }
    
 
 }

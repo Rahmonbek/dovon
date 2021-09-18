@@ -178,7 +178,7 @@ export default class Footer extends Component {
                                 </div>
                                
                                 <div className="contact-info">
-                                    <h3>Jizzax viloyati Jizzax shahri</h3>
+                                    <h3>Toshkent shahar Yakkasaroy tumani</h3>
                                     <p>Ortiqho'jayev ko'chasi 5 - uy</p>
                                 </div>
                                
@@ -218,15 +218,15 @@ export default class Footer extends Component {
                                         <a href="#" style={{color:'white'}}>Yangiliklar</a>
                                     </li>
                                     <li>
-                                        <a href="#" style={{color:'white'}}>Tumanlar</a>
+                                        <a href="#" style={{color:'white'}}>Mahsulotlar</a>
                                     </li>
                                     <li>
-                                        <a href="#" style={{color:'white'}}>Ma'muriyat</a>
+                                        <a href="#" style={{color:'white'}}>Bog'lanish</a>
                                     </li>
                                 </ul>
                                 <ul>
                                     <li>
-                                        <a href="#" style={{color:'white'}}>Bog'lanish</a>
+                                        <a href="#" style={{color:'white'}}>Buyurtma qilish</a>
                                     </li>
                                     <li>
                                         <a href="#" style={{color:'white'}}>Foto lavhalar</a>
@@ -251,14 +251,14 @@ export default class Footer extends Component {
                                 <p style={{color:'white'}}>
                                Emailingizni yuborish orqali biz bilan bog'lanishingiz mumkin</p>
                                 <form action="#">
-                                    <div className="form-row">
+                                    {/* <div className="form-row">
                                         <div className="col dk-footer-form">
                                             <input type="email" className="form-control" placeholder="Email Address"/>
                                             <button type="submit">
                                                 <i className="fa fa-send"></i>
                                             </button>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </form>
                                
                             </div>
