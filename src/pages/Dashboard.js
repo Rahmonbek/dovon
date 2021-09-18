@@ -14,7 +14,7 @@ import FooterA from './FooterA'
 export default class Dashboard extends Component {
     render() {
         return (
-            <div>
+            <div style={{overflowX:'hidden'}}>
             <div className={style.header}>
                 <div className={style.navT}>
                 <Navbar expand="lg">
