@@ -135,8 +135,10 @@ export default class Dashboard extends Component {
         <Row>
            <Col lg={6} md={4} sm={12}  className={style.cl}>
 <div className={style.icon_item}>
+    <br/>
     <Row>
-    <Col lg={6} style={{display:'flex', alignItems:'center', justifyContent:'center', marginBottom:'10px'}}>
+
+    <Col lg={6} style={{display:'flex', alignItems:'center', justifyContent:'center', marginBottom:'40px'}}>
     <Tooltip placement="right" title="+998930820372">
         <a href="tel:+998930820372" target="_blank" className="cards_icon">
       
@@ -144,7 +146,7 @@ export default class Dashboard extends Component {
     </a></Tooltip>
 
         </Col>
-        <Col lg={6} style={{display:'flex', alignItems:'center', justifyContent:'center', marginBottom:'10px'}}>
+        <Col lg={6} style={{display:'flex', alignItems:'center', justifyContent:'center', marginBottom:'40px'}}>
         <Tooltip placement="left" title="ittower01@gmail.com">
 
         <a href="mailto:ittower01@gmail.com" target="_blank" className="cards_icon">
@@ -152,7 +154,7 @@ export default class Dashboard extends Component {
     </a></Tooltip>
 
         </Col>
-        <Col lg={6} style={{display:'flex', alignItems:'center', justifyContent:'center', marginBottom:'10px'}}>
+        <Col lg={6} style={{display:'flex', alignItems:'center', justifyContent:'center', marginBottom:'40px'}}>
         <Tooltip placement="right" title="Telegram">
 
         <a href="#" target="_blank" className="cards_icon">
@@ -160,7 +162,7 @@ export default class Dashboard extends Component {
     </a></Tooltip>
 
         </Col>
-        <Col lg={6} style={{display:'flex', alignItems:'center', justifyContent:'center', marginBottom:'10px'}}>
+        <Col lg={6} style={{display:'flex', alignItems:'center', justifyContent:'center', marginBottom:'40px'}}>
         <Tooltip placement="left" title="Instagram">
  
         <a href="#" target="_blank" className="cards_icon">
@@ -168,7 +170,7 @@ export default class Dashboard extends Component {
     </a></Tooltip>
 
         </Col>
-        <Col lg={6} style={{display:'flex', alignItems:'center', justifyContent:'center', marginBottom:'10px'}}>
+        <Col lg={6} style={{display:'flex', alignItems:'center', justifyContent:'center', marginBottom:'40px'}}>
         <Tooltip placement="right" title="Facebook">
 
         <a href="#" target="_blank" className="cards_icon">
@@ -176,7 +178,7 @@ export default class Dashboard extends Component {
     </a></Tooltip>
 
         </Col>
-        <Col lg={6} style={{display:'flex', alignItems:'center', justifyContent:'center', marginBottom:'10px'}}>
+        <Col lg={6} style={{display:'flex', alignItems:'center', justifyContent:'center', marginBottom:'40px'}}>
         <Tooltip placement="left" title="You tube">
 
         <a href="#" target="_blank" className="cards_icon">
