@@ -36,12 +36,12 @@ export default class FooterA extends Component {
 
 				<div>
 					<i class="fa fa-map-marker"></i>
-					<p><span>Toshkent shahri Yakkasaroy tumani</span>Ortiqho'jayev ko'chasi 5 - uy</p>
+					<p><span>Toshkent shahri Olmazor tumani</span>TKAD ko'chasi</p>
 				</div> 
 
 				<div>
 					<i class="fa fa-phone"></i>
-					<p>+998 95 711 95 53<br/>Bizga qo'ng'iroq qiling</p> 
+					<p>+998 97 585-78-77<br/>Bizga qo'ng'iroq qiling</p> 
                                     
 				</div>
 

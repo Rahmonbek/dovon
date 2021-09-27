@@ -43,7 +43,7 @@ export default class Dashboard extends Component {
                  <p>Sifat va qulay narxlar</p>
                  <h1>Bizning eng oliy maqsadimiz mijozlarimiz uchun qulaylik yaratish va ularga sifatli mahsulot yetkazish</h1>
 
-                 <a target="_blank" href="tel:+998930820372">Biz bilan bog'laning</a>
+                 <a target="_blank" href="tel:+998 97 585-78-77">Biz bilan bog'laning</a>
              </Col>
              <Col lg={6} md={6} sm={12} className={style.head_imgCol}>
              <div className={style.head_img}>
@@ -139,8 +139,8 @@ export default class Dashboard extends Component {
     <Row>
 
     <Col lg={6} style={{display:'flex', alignItems:'center', justifyContent:'center', marginBottom:'40px'}}>
-    <Tooltip placement="right" title="+998930820372">
-        <a href="tel:+998930820372" target="_blank" className="cards_icon">
+    <Tooltip placement="right" title="+998 97 585-78-77">
+        <a href="tel:+998 97 585-78-77" target="_blank" className="cards_icon">
       
         <i className="fas fa-phone"></i>
     </a></Tooltip>
