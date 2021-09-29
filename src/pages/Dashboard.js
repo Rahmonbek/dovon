@@ -165,7 +165,7 @@ export default class Dashboard extends Component {
         <Col lg={6} style={{display:'flex', alignItems:'center', justifyContent:'center', marginBottom:'40px'}}>
         <Tooltip placement="left" title="Instagram">
  
-        <a href="#" target="_blank" className="cards_icon">
+        <a href="https://www.instagram.com/dovon_mchj/" target="_blank" className="cards_icon">
         <i className="fab fa-instagram"></i>
     </a></Tooltip>
 
@@ -173,7 +173,7 @@ export default class Dashboard extends Component {
         <Col lg={6} style={{display:'flex', alignItems:'center', justifyContent:'center', marginBottom:'40px'}}>
         <Tooltip placement="right" title="Facebook">
 
-        <a href="#" target="_blank" className="cards_icon">
+        <a href="https://www.facebook.com/Dovon_MCHJ-263868375509293" target="_blank" className="cards_icon">
         <i className="fab fa-facebook"></i>
     </a></Tooltip>
 
@@ -181,7 +181,7 @@ export default class Dashboard extends Component {
         <Col lg={6} style={{display:'flex', alignItems:'center', justifyContent:'center', marginBottom:'40px'}}>
         <Tooltip placement="left" title="You tube">
 
-        <a href="#" target="_blank" className="cards_icon">
+        <a href="https://www.youtube.com/channel/UCUOXvyxJgwo5-pTw9fuuyRw" target="_blank" className="cards_icon">
         <i className="fab fa-youtube"></i>
     </a></Tooltip>
 
