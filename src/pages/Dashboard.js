@@ -21,7 +21,7 @@ export default class Dashboard extends Component {
   <Container className={style.navT_item}>
     <Navbar.Brand href="#home" className={style.logo}>
        <img src={logo}/>
-       <p>Dovon</p>
+       <p>Davon</p>
         </Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" style={{border:'none'}} />
     <Navbar.Collapse id="basic-navbar-nav" >
@@ -149,7 +149,7 @@ export default class Dashboard extends Component {
         <Col lg={6} style={{display:'flex', alignItems:'center', justifyContent:'center', marginBottom:'40px'}}>
         <Tooltip placement="left" title="ittower01@gmail.com">
 
-        <a href="mailto:ittower01@gmail.com" target="_blank" className="cards_icon">
+        <a href="https://www.instagram.com/dovon_mchj/" target="_blank" className="cards_icon">
         <i className="fas fa-envelope"></i>
     </a></Tooltip>
 
@@ -157,7 +157,7 @@ export default class Dashboard extends Component {
         <Col lg={6} style={{display:'flex', alignItems:'center', justifyContent:'center', marginBottom:'40px'}}>
         <Tooltip placement="right" title="Telegram">
 
-        <a href="#" target="_blank" className="cards_icon">
+        <a href="https://www.instagram.com/dovon_mchj/" target="_blank" className="cards_icon">
         <i className="fab fa-telegram"></i>
     </a></Tooltip>
 
@@ -165,7 +165,7 @@ export default class Dashboard extends Component {
         <Col lg={6} style={{display:'flex', alignItems:'center', justifyContent:'center', marginBottom:'40px'}}>
         <Tooltip placement="left" title="Instagram">
  
-        <a href="#" target="_blank" className="cards_icon">
+        <a href="https://www.instagram.com/dovon_mchj/" target="_blank" className="cards_icon">
         <i className="fab fa-instagram"></i>
     </a></Tooltip>
 
@@ -173,7 +173,7 @@ export default class Dashboard extends Component {
         <Col lg={6} style={{display:'flex', alignItems:'center', justifyContent:'center', marginBottom:'40px'}}>
         <Tooltip placement="right" title="Facebook">
 
-        <a href="#" target="_blank" className="cards_icon">
+        <a href="https://www.facebook.com/Dovon_MCHJ-263868375509293" target="_blank" className="cards_icon">
         <i className="fab fa-facebook"></i>
     </a></Tooltip>
 
@@ -181,7 +181,7 @@ export default class Dashboard extends Component {
         <Col lg={6} style={{display:'flex', alignItems:'center', justifyContent:'center', marginBottom:'40px'}}>
         <Tooltip placement="left" title="You tube">
 
-        <a href="#" target="_blank" className="cards_icon">
+        <a href="https://www.youtube.com/channel/UCUOXvyxJgwo5-pTw9fuuyRw" target="_blank" className="cards_icon">
         <i className="fab fa-youtube"></i>
     </a></Tooltip>
 
