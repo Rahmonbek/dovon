@@ -149,7 +149,7 @@ export default class Dashboard extends Component {
         <Col lg={6} style={{display:'flex', alignItems:'center', justifyContent:'center', marginBottom:'40px'}}>
         <Tooltip placement="left" title="ittower01@gmail.com">
 
-        <a href="mailto:ittower01@gmail.com" target="_blank" className="cards_icon">
+        <a href="https://www.instagram.com/dovon_mchj/" target="_blank" className="cards_icon">
         <i className="fas fa-envelope"></i>
     </a></Tooltip>
 
@@ -157,7 +157,7 @@ export default class Dashboard extends Component {
         <Col lg={6} style={{display:'flex', alignItems:'center', justifyContent:'center', marginBottom:'40px'}}>
         <Tooltip placement="right" title="Telegram">
 
-        <a href="#" target="_blank" className="cards_icon">
+        <a href="https://www.instagram.com/dovon_mchj/" target="_blank" className="cards_icon">
         <i className="fab fa-telegram"></i>
     </a></Tooltip>
 
