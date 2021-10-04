@@ -21,7 +21,7 @@ export default class Dashboard extends Component {
   <Container className={style.navT_item}>
     <Navbar.Brand href="#home" className={style.logo}>
        <img src={logo}/>
-       <p>Dovon</p>
+       <p>Davon</p>
         </Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" style={{border:'none'}} />
     <Navbar.Collapse id="basic-navbar-nav" >
