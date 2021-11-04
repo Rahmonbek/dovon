@@ -1,0 +1,84 @@
+.komplar  {
+    margin: 0;
+    background: rgb(255, 255, 255);
+    text-align: center;
+    font-family: sans-serif;
+    color: #fefefe;
+  }
+  .komplar .container {
+    position: relative;
+    width: 320px;
+    margin: 50px auto 0 auto;
+    perspective: 1000px;
+  }
+  
+  .komplar .carousel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d; 
+    animation: rotate360 60s infinite forwards linear;
+  }
+  .komplar .carousel__face { 
+    position: absolute;
+    width: 300px;
+    height: 187px;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    display: flex;
+  }
+  
+  .komplar .carousel__face:hover{
+      transform:scale(1.2, 1.2)
+  }
+  .komplar span {
+    margin: auto;
+    font-size: 2rem;
+  }
+  
+  
+  .komplar .carousel__face:nth-child(1) {
+    background-image: url("../img/komp1.jpg");
+    transform: rotateY(  0deg) translateZ(430px); }
+  .komplar .carousel__face:nth-child(2) { 
+    background-image: url("../img/komp2.png");
+      transform: rotateY( 40deg) translateZ(430px); }
+  .komplar .carousel__face:nth-child(3) {
+    background-image: url("../img/komp3.png");
+    transform: rotateY( 80deg) translateZ(430px); }
+  .komplar .carousel__face:nth-child(4) {
+    background-image: url("../img/komp4.png");
+    transform: rotateY(120deg) translateZ(430px); }
+  .komplar .carousel__face:nth-child(5) { 
+    background-image: url("../img/komp5.jpg");
+   transform: rotateY(160deg) translateZ(430px); }
+  .komplar .carousel__face:nth-child(6) { 
+    background-image: url("../img/komp6.jpg");
+   transform: rotateY(200deg) translateZ(430px); }
+  .komplar .carousel__face:nth-child(7) { 
+    background-image: url("../img/komp7.jpg");
+   transform: rotateY(240deg) translateZ(430px); }
+  .komplar .carousel__face:nth-child(8) {
+    background-image: url("../img/komp8.jpg");
+    transform: rotateY(280deg) translateZ(430px); }
+    .komplar .carousel__face:nth-child(9) {
+        background-image: url("../img/komp9.jpg");
+        transform: rotateY(320deg) translateZ(430px); }
+        .komplar .carousel__face:nth-child(10) {
+            background-image: url("../img/komp10.jpg");
+            transform: rotateY(360deg) translateZ(430px); }
+              
+  
+  
+  @keyframes rotate360 {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(-360deg);
+    }
+  }
+  

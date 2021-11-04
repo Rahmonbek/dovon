@@ -10,10 +10,33 @@ import YouTube from 'react-youtube';
 import {Tooltip} from 'antd'
 import 'antd/dist/antd.css';
 import FooterA from './FooterA'
+import Carousel from './Carousel';
+import { BounceLoader } from 'react-spinners';
+import uz from '../img/uz.jpg'
+import chin from '../img/chin.jpg'
+
+// BounceLoader
 
 export default class Dashboard extends Component {
+    state={
+        loader:true
+    }
+    componentDidMount(){
+        setTimeout(() => {
+            this.setState({
+                loader:false
+            })
+        }, 4000)
+    }
     render() {
         return (
+            <>
+            {this.state.loader?
+            <div className="loader">
+<img src={uz} style={{width:'100px', marginRight:'20px'}}/>
+<BounceLoader color="blue" loading={this.state.loader}  size={100} />
+<img src={chin} style={{width:'100px', marginLeft:'20px'}}/>
+            </div>:
             <div style={{overflowX:'hidden'}}>
             <div className={style.header}>
                 <div className={style.navT}>
@@ -29,7 +52,7 @@ export default class Dashboard extends Component {
         <Nav.Link className={style.lik} href="#home">Bosh sahifa</Nav.Link>
         <Nav.Link className={style.lik} href="#link">Mahsulotlarimiz</Nav.Link>
         <Nav.Link className={style.lik} href="#link">Biz haqimizda</Nav.Link>
-        <Nav.Link className={style.lik} href="#link">Skidkalar</Nav.Link>
+        <Nav.Link className={style.lik} href="#link">Chegirmalar</Nav.Link>
         <Nav.Link className={style.lik} href="#link">Bog'lanish</Nav.Link>
         
       </Nav>
@@ -40,7 +63,7 @@ export default class Dashboard extends Component {
          
          <Container><Row>
              <Col lg={6} md={6} sm={12} className={style.head_textCol}>
-                 <p>Sifat va qulay narxlar</p>
+                 <p>Sayt test rejimida ishlamoqda !!!</p>
                  <h1>Bizning eng oliy maqsadimiz mijozlarimiz uchun qulaylik yaratish va ularga sifatli mahsulot yetkazish</h1>
 
                  <a target="_blank" href="tel:+998 97 585-78-77">Biz bilan bog'laning</a>
@@ -78,7 +101,7 @@ export default class Dashboard extends Component {
                 <i className="fas fa-laptop"></i>
             </div>
             <h1>Sifat</h1>
-            <p style={{zIndex:'10',textShadow:'0px 0px 5px white'}}>Kompyuterlarimiz sifat darajasi bo'yicha dunyoning eng mashhur brandlari bilan bahslasha oladi. Har bir mahsulotimizga 3 yillik kafolat beramiz. Shu muddat ichida biror kamchilik sezilsa servis xizmatimizdan bemalol tekinga foydalanishingiz mumkin.</p>
+            <p style={{zIndex:'10',textShadow:'0px 0px 5px white'}}>Noutbook sifat darajasi bo'yicha dunyoning eng mashhur brendlari bilan bahslasha oladi. Har bir mahsulotimizga 6 oylik kafolat beramiz. Shu muddat ichida biror kamchilik sezilsa servis xizmatimizdan bemalol tekinga foydalanishingiz mumkin.</p>
         </div>
                 
                 </Col>
@@ -89,7 +112,7 @@ export default class Dashboard extends Component {
                 <i className="fas fa-money-bill-alt"></i>
             </div>
             <h1>Narx</h1> 
-            <p style={{zIndex:'10',textShadow:'0px 0px 5px white'}}>Mijozlarimizga qulaylik tug'dirish maqsadida mahsulotilarimiz narxlarini eng arzon miqdorda belgilaganmiz. Bizning mahsulotimizni xarid qilsangiz pulingiz o'zingiz bilan ketadi.</p>
+            <p style={{zIndex:'10',textShadow:'0px 0px 5px white'}}>Mijozlarimizga qulaylik tug'dirish maqsadida mahsulotlarimiz narxlarini eng arzon miqdorda belgilaganmiz. Bizning mahsulotimizni xarid qilsangiz pulingiz o'zingiz bilan ketadi.</p>
         </div>
                 
             </Col>
@@ -100,19 +123,22 @@ export default class Dashboard extends Component {
     </Container><div className={style.blue1}></div>
 <div className={style.blue2}></div>
 </div>
+
 <div className={style.video}>
     <Row>
         <Col lg={6} md={6} sm={12}>
         <YouTube
                     videoId={
-                      "YTOHaGQm_f4"
+                      "Q5zjQIStE38"
                     }
+                    autoplay={true}
+                    muted={true}
                     opts={{
                       width: "100%",
                       height: "300px",
                       playerVars: {
                         // https://developers.google.com/youtube/player_parameters
-                        autoplay: 0,
+                        autoplay: 1000,
                       },
                     }}
                     className={style.video}
@@ -128,7 +154,8 @@ export default class Dashboard extends Component {
         </Col>
     </Row>
 </div>
-
+<Carousel/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 <div className={style.icon} id="iconH">
     <Container>
         <h1>Biz bilan bog'laning</h1>
@@ -138,52 +165,53 @@ export default class Dashboard extends Component {
     <br/>
     <Row>
 
-    <Col lg={6} style={{display:'flex', alignItems:'center', justifyContent:'center', marginBottom:'40px'}}>
-    <Tooltip placement="right" title="+998 97 585-78-77">
+    <Col lg={6} style={{display:'flex', flexDirection:"column", alignItems:'center', justifyContent:'center', marginBottom:'40px'}}>
+    <h5 style={{color:'blue'}}> +998 97 585-78-77</h5>
+  
         <a href="tel:+998 97 585-78-77" target="_blank" className="cards_icon">
       
         <i className="fas fa-phone"></i>
-    </a></Tooltip>
+    </a>
+    
 
         </Col>
-        <Col lg={6} style={{display:'flex', alignItems:'center', justifyContent:'center', marginBottom:'40px'}}>
-        <Tooltip placement="left" title="ittower01@gmail.com">
+        <Col lg={6} style={{display:'flex', flexDirection:"column",  alignItems:'center', justifyContent:'center', marginBottom:'40px'}}>
+        <h5 style={{color:'blue'}}>davon@gmail.com</h5>
 
-        <a href="https://www.instagram.com/dovon_mchj/" target="_blank" className="cards_icon">
+        <a href="mailto: davon@gmail.com" target="_blank" className="cards_icon">
         <i className="fas fa-envelope"></i>
-    </a></Tooltip>
+    </a>
 
         </Col>
-        <Col lg={6} style={{display:'flex', alignItems:'center', justifyContent:'center', marginBottom:'40px'}}>
-        <Tooltip placement="right" title="Telegram">
+        <Col lg={6} style={{display:'flex', flexDirection:"column",  alignItems:'center', justifyContent:'center', marginBottom:'40px'}}>
+        <h5 style={{color:'blue'}}>Telegram</h5>
 
-        <a href="https://www.instagram.com/dovon_mchj/" target="_blank" className="cards_icon">
+        <a href="https://t.me/dovon_nutbuki" target="_blank" className="cards_icon">
         <i className="fab fa-telegram"></i>
-    </a></Tooltip>
+    </a>
 
         </Col>
-        <Col lg={6} style={{display:'flex', alignItems:'center', justifyContent:'center', marginBottom:'40px'}}>
-        <Tooltip placement="left" title="Instagram">
- 
+        <Col lg={6} style={{display:'flex', flexDirection:"column",  alignItems:'center', justifyContent:'center', marginBottom:'40px'}}>
+        <h5 style={{color:'blue'}}>Instagram</h5>
         <a href="https://www.instagram.com/dovon_mchj/" target="_blank" className="cards_icon">
         <i className="fab fa-instagram"></i>
-    </a></Tooltip>
+    </a>
 
         </Col>
-        <Col lg={6} style={{display:'flex', alignItems:'center', justifyContent:'center', marginBottom:'40px'}}>
-        <Tooltip placement="right" title="Facebook">
+        <Col lg={6} style={{display:'flex', flexDirection:"column",  alignItems:'center', justifyContent:'center', marginBottom:'40px'}}>
+        <h5 style={{color:'blue'}}>Facebook</h5>
 
         <a href="https://www.facebook.com/Dovon_MCHJ-263868375509293" target="_blank" className="cards_icon">
         <i className="fab fa-facebook"></i>
-    </a></Tooltip>
+    </a>
 
         </Col>
-        <Col lg={6} style={{display:'flex', alignItems:'center', justifyContent:'center', marginBottom:'40px'}}>
-        <Tooltip placement="left" title="You tube">
+        <Col lg={6} style={{display:'flex', flexDirection:"column",  alignItems:'center', justifyContent:'center', marginBottom:'40px'}}>
+        <h5 style={{color:'blue'}}>You tube</h5>
 
         <a href="https://www.youtube.com/channel/UCUOXvyxJgwo5-pTw9fuuyRw" target="_blank" className="cards_icon">
         <i className="fab fa-youtube"></i>
-    </a></Tooltip>
+    </a>
 
         </Col>
 
@@ -216,7 +244,10 @@ export default class Dashboard extends Component {
 </div>
 <FooterA />
             </div>
-         
+
+            }
+            </>
+                     
         )
     }
 }

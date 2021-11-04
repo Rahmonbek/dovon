@@ -23,6 +23,8 @@ a{text-decoration:none;}
    margin-left:0px; margin-bottom: 30px;
    border-radius:50%; background:radial-gradient(rgb(3, 112, 255),rgb(17, 6, 233));}
   .cards_icon i{font-size: 26px; color:white;}
+  .cards_icon:hover{background: rgb(255, 3, 3);}
+  /* .cards_icon:hover i{color: blue;} */
 
   .widget {
     margin-bottom: 50px;
@@ -186,6 +188,14 @@ footer p {
 .send{
 margin:20px;
 }
+.loader{
+  width:100%;
+  height: 100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.loader img{border-radius: 50%;}
 @media (min-width:1440px)  {
   .cards_icon{
     scale: 1.5;
