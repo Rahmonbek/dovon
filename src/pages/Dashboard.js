@@ -13,21 +13,24 @@ import FooterA from './FooterA'
 import Carousel from './Carousel';
 import { BounceLoader } from 'react-spinners';
 import uz from '../img/uz.jpg'
-import chin from '../img/chin.jpg'
+import chin from '../img/chin.jpg';
+import dovon_cost from '../img/dovon_cost.jpg';
+import ot_logo from '../img/ot_logo.jpg';
+import asaka from '../img/asaka.jpg';
 
 // BounceLoader
 
 export default class Dashboard extends Component {
     state={
-        loader:true
+        loader:false
     }
-    componentDidMount(){
+    /* componentDidMount(){
         setTimeout(() => {
             this.setState({
                 loader:false
             })
-        }, 4000)
-    }
+        }, 400)
+    } */
     render() {
         return (
             <>
@@ -123,7 +126,90 @@ export default class Dashboard extends Component {
     </Container><div className={style.blue1}></div>
 <div className={style.blue2}></div>
 </div>
+<div className={style.costs}>
+    <img src={ot_logo} className={style.ot_logo} />
+<Container>
+    <Row>
+    <Col lg={12} className="d-flex align-items-center">
+    <h1>"Davon" MCHJ</h1>
+    </Col>
+    <Col lg={12}>
+    <h2>Notebook DW156</h2>
+    </Col>
+    </Row>
+<Row>
+    
+    <Col lg={7} md={12}  className='d-flex'>
+    <Row>
+    <Col xs={3} className=" d-flex flex-column align-items-start"><p>Protsessor:</p></Col>
+    <Col xs={9} className="d-flex flex-column align-items-start">
+        <p><b>Intel Celeron J3455 1,50 GHz (2 МБ kesh-xotira, chastota 2,3 ГГц)</b></p>
+    </Col>
+    <Col xs={3} className=" d-flex flex-column align-items-start"><p>Yadro soni:</p></Col>
+    <Col xs={9} className="d-flex flex-column align-items-start">
+        <p><b>4</b></p>
+    </Col>
+    <Col xs={3} className=" d-flex flex-column align-items-start"><p>Tezkor xotira:</p></Col>
+    <Col xs={9} className="d-flex flex-column align-items-start">
+        <p><b>8 ГБ  DDR4</b></p>
+    </Col>
+    <Col xs={3} className=" d-flex flex-column align-items-start"> <p>Doimiy xotira:</p></Col>
+    <Col xs={9} className="d-flex flex-column align-items-start">
+        <p><b>512 ГБ  SSD</b></p>
+    </Col>
+    <Col xs={3} className=" d-flex flex-column align-items-start"> <p>Video karta:</p></Col>
+    <Col xs={9} className="d-flex flex-column align-items-start">
+         <p><b>Intel UHD Graphics 500</b></p>
+    </Col>
+    <Col xs={3} className=" d-flex flex-column align-items-start"> <p>Monitor:</p></Col>
+    <Col xs={9} className="d-flex flex-column align-items-start">
+        <p><b>15,6-dyum 1920 x 1080 FHD IPS</b></p>
+    </Col>
+    <Col xs={3} className=" d-flex flex-column align-items-start"> <p>WiFi:</p></Col>
+    <Col xs={9} className="d-flex flex-column align-items-start">
+        <p><b>WIFI 802.11 a/b/g/n 2,4 G +5G WIFI +BT, Bluetooth4.2</b></p>
+    </Col>
+    <Col xs={3} className=" d-flex flex-column align-items-start"> <p>Web camera:</p></Col>
+    <Col xs={9} className="d-flex flex-column align-items-start">
+        <p><b>0,3 Mp</b></p>
+    </Col>
+    <Col xs={3} className=" d-flex flex-column align-items-start">  <p>Batareya:</p></Col>
+    <Col xs={9} className="d-flex flex-column align-items-start">
+        <p><b>Lithium-ion polymer battery  7.6V, 5000mAh, about 6-8 hours</b></p>
+    </Col>
+    <Col xs={3} className=" d-flex flex-column align-items-start">  <p>Ethernet:</p></Col>
+    <Col xs={9} className="d-flex flex-column align-items-start">
+       <p><b>RJ45</b></p>
+    </Col>
+    <Col xs={3} className=" d-flex flex-column align-items-start">  <p>Interfeys:</p></Col>
+    <Col xs={9} className="d-flex flex-column align-items-start">
+       <p><b>USB Type C*1 + USB port*2, 1*Mini HDMI, ∮ 3.5mm standard headphone jack</b></p>
+    </Col>
+    <Col xs={3} className=" d-flex flex-column align-items-start"> <p>Klaviatura:</p></Col>
+    <Col xs={9} className="d-flex flex-column align-items-start">
+        <p><b>Ru/En</b></p>
+    </Col>
+    <Col xs={3} className=" d-flex flex-column align-items-start"> <p>Og'irligi:</p></Col>
+    <Col xs={9} className="d-flex flex-column align-items-start">
+       <p><b>1830 г, </b></p>
+    </Col>
+    <Col xs={3} className=" d-flex flex-column align-items-start"> <p>Umumiy og'irligi:</p></Col>
+    <Col xs={9} className="d-flex flex-column align-items-start">
+        <p><b>2250 г</b></p>
+    </Col>
+    <Col xs={3} className=" d-flex flex-column align-items-start"> <p>Rangi:</p></Col>
+    <Col xs={9} className="d-flex flex-column align-items-start">
+        <p><b>Kumush rang</b></p>
+    </Col>
+    </Row>
+    </Col>
+    <Col lg={5} md={12} >
+    <img className={style.dovon_cost} src={dovon_cost} />
+    </Col>
 
+</Row>
+</Container>
+</div>
 <div className={style.video}>
     <Row>
         <Col lg={6} md={6} sm={12}>
@@ -156,6 +242,161 @@ export default class Dashboard extends Component {
 </div>
 <Carousel/>
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+<div className={style.asaka}>
+    <Container>
+        <img className={style.asaka_logo} src={asaka} />
+        <img className={style.ot_logo} src={ot_logo} />
+        <Row  >
+            <Col lg={12} className="d-flex justify-content-center align-items-center"><h1>Bankdan sotib olish tartibi</h1></Col>
+        </Row>
+        <Row style={{marginTop:"30px"}}>
+            <Col md={6} >
+                <h3 style={{marginTop:"80px"}}>Naqd sotib olish</h3>
+                <h3>3 800 000 so'm</h3>
+                <h3 style={{marginTop:"70px"}} >Bir yilgacha bo'lib to'lash</h3>
+                <h4>Narxi 		– 4 440 000</h4>
+                <h4>Sug’urta to‘lovi 	– 44 400</h4>
+                <h4>Oylik to‘lovi 	– 370 000</h4>
+            </Col>
+            <Col md={6} >
+                <table className={style.table} >
+                    <tr>
+                        <td colspan={3} width="50%">Narxi</td>
+                        <td colspan={3} width="50%">4 440 000</td>
+                    </tr>
+                    <tr>
+                        <td colspan={3} width="50%">To'lov muddati</td>
+                        <td colspan={3} width="50%">12 oy</td>
+                    </tr>
+                    
+                    <tr>
+                        <th colspan={1} width="12.5%">Oylar</th>
+                        <th colspan={2} width="37.5%">Qolgan to'lov</th>
+                        <th colspan={3} width="50%">Oylik to'lov</th>
+                    </tr>
+                    <tr>
+                        <td colspan={1} width="12.5%" >
+1
+                        </td>
+                        <td colspan={2} width="37.5%" >
+4 440 000,00
+                        </td>
+                        <td colspan={3} width="50%" >370 000,00</td>
+                    </tr>
+                    <tr>
+                        <td colspan={1} width="12.5%" >
+2
+                        </td>
+                        <td colspan={2} width="37.5%" >
+4 440 000,00
+                        </td>
+                        <td colspan={3} width="50%" >370 000,00</td>
+                    </tr>
+                    <tr>
+                        <td colspan={1}  width="12.5%" >
+3
+                        </td>
+                        <td  colspan={2} width="37.5%" >
+4 440 000,00
+                        </td>
+                        <td colspan={3}  width="50%" >370 000,00</td>
+                    </tr>
+                    <tr>
+                        <td colspan={1} width="12.5%" >
+4
+                        </td>
+                        <td colspan={2} width="37.5%" >
+4 440 000,00
+                        </td>
+                        <td colspan={3} width="50%" >370 000,00</td>
+                    </tr>
+                    <tr>
+                        <td colspan={1} width="12.5%" >
+5
+                        </td>
+                        <td colspan={2} width="37.5%" >
+4 440 000,00
+                        </td>
+                        <td colspan={3} width="50%" >370 000,00</td>
+                    </tr>
+                    <tr>
+                        <td colspan={1} width="12.5%" >
+6
+                        </td>
+                        <td colspan={2} width="37.5%" >
+4 440 000,00
+                        </td>
+                        <td colspan={3} width="50%" >370 000,00</td>
+                    </tr>
+                    <tr>
+                        <td colspan={1} width="12.5%" >
+7
+                        </td>
+                        <td colspan={2} width="37.5%" >
+4 440 000,00
+                        </td>
+                        <td colspan={3} width="50%" >370 000,00</td>
+                    </tr>
+                    <tr>
+                        <td colspan={1} width="12.5%" >
+8
+                        </td>
+                        <td colspan={2} width="37.5%" >
+4 440 000,00
+                        </td>
+                        <td colspan={3} width="50%" >370 000,00</td>
+                    </tr>
+                    <tr>
+                        <td colspan={1} width="12.5%" >
+9
+                        </td>
+                        <td colspan={2} width="37.5%" >
+4 440 000,00
+                        </td>
+                        <td colspan={3} width="50%" >370 000,00</td>
+                    </tr>
+                    <tr>
+                        <td colspan={1} width="12.5%" >
+10
+                        </td>
+                        <td colspan={2} width="37.5%" >
+4 440 000,00
+                        </td>
+                        <td colspan={3} width="50%" >370 000,00</td>
+                    </tr>
+                    <tr>
+                        <td colspan={1} width="12.5%" >
+11
+                        </td>
+                        <td colspan={2} width="37.5%" >
+4 440 000,00
+                        </td>
+                        <td colspan={3} width="50%" >370 000,00</td>
+                    </tr>
+                    <tr>
+                        <td colspan={1} width="12.5%" >
+12
+                        </td>
+                        <td colspan={2} width="37.5%" >
+4 440 000,00
+                        </td>
+                        <td colspan={3} width="50%" >370 000,00</td>
+                    </tr>
+                    <tr>
+                        <td colspan={3} width="50%">Jami</td>
+                        <td colspan={3} width="50%">4 440 000</td>
+                    </tr>
+                    <tr>
+                        <td colspan={3} width="50%">Sug'urta foizi 1% 12 oy uchun</td>
+                        <td colspan={3} width="50%">44 400</td>
+                    </tr>
+                </table>
+            </Col>
+        </Row>
+    </Container>
+</div>
+
 <div className={style.icon} id="iconH">
     <Container>
         <h1>Biz bilan bog'laning</h1>
